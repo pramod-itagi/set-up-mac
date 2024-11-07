@@ -12,7 +12,7 @@ This guide will walk you through setting up your Mac for software development. W
 6. [MySQL](#step-6-install-mysql)
 7. [MySQL Workbench](#step-7-install-mysql-workbench)
 8. [Ruby Version Manager](#step-8-install-rvm-ruby-version-manager)
-9. [Ruby](#step-9-installing-ruby)
+9. [Ruby](#step-9-install-ruby)
 10. [Rails](#step-10-install-rails)
 11. [Visual Studio Code](#step-11-install-visual-studio-code)
 12. [Branch name and PWD in Terminal](#step-12-show-branch-name-and-present-working-directory-in-terminal)
