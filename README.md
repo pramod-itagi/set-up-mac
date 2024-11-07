@@ -195,11 +195,32 @@ Ruby is an interpreted, high-level, general-purpose programming language. We are
 
 Above are the prerequisites for installing Ruby in Mac.
 
-Now, you can install any desired version of ruby into the system using RVM. Run the below command to install ruby version 3.2.2 using RVM with openssl 3.
+### Note
 
-```bash
-rvm install ruby-3.2.2 -C --with-openssl-dir=/usr/local/etc/openssl@3
-```
+RVM's stable branch hasn't been updated in years, so it doesn't include recent patches or support for newer dependencies like openssl@3. RVM’s head version has seen more active updates, including fixes for OpenSSL compatibility on macOS.
+
+Here’s how to switch to the latest head version of RVM, which should include recent patches and improved support for OpenSSL on macOS
+
+1. Get the Latest RVM (Head):
+    This command will pull the latest version directly from the RVM repository, including the most recent patches and fixes:
+
+    ```bash
+    rvm get head
+    ```
+
+2. Reload RVM:
+    Reload RVM to apply the updates:
+
+    ```bash
+    rvm reload
+    ```
+
+3. Now, you can install any desired version of ruby into the system using RVM.
+    Run the below command to install ruby version 3.2.2 using RVM with openssl 3.
+
+    ```bash
+    rvm install ruby-3.2.2 -C --with-openssl-dir=/usr/local/etc/openssl@3
+    ```
 
 Once the installation gets successful, you can verify the list of ruby versions installed by RVM in your system by running below command.
 
@@ -239,7 +260,7 @@ In Rails, Gems means packages. Rails is also a package or gem. We are using rail
 
 Before installing Rails, we need to install Bundler.
 
-#### Install Bundler
+### Install Bundler
 
 Bundler provides a consistent environment for Ruby projects by tracking and installing the exact gems and versions that are needed.
 
